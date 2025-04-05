@@ -1,41 +1,106 @@
 @import "Variables";
-.contact{
-    background-color: $color-secondry;
-    >.contact-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: $color-text;
-        >.contact_left{
-            width: 50%;
-            > span:nth-child(1) {
-               font-size: 80px;
-              }
-              > span:nth-of-type(2) {
-                font-size: 40px;
-              }
-        }
-        >.contact_right{
-            width: 50%;
-            >ul{
-                li{
-                    list-style-type: none;
-                    font-size: 30px;
-                    display: flex;
-                    align-items: center;
-                    gap: 25px;
-                    &:hover{
-                        font-size: 35px;
-                    }
-                    >a{
-                        text-decoration: none;
-                        color: white;
-                        &:hover{
-                            font-size: 35px;
-                        }
-                    }
-                }
-            }
-        }
+
+.contact {
+  background-color: $color-secondry;
+
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-text;
+    padding: 2rem;
+
+    .contact_left {
+      width: 50%;
+
+      span:first-of-type {
+        font-size: 80px;
+        font-weight: bold;
+        display: block;
+      }
+
+      span:nth-of-type(2) {
+        font-size: 40px;
+        display: block;
+        margin-top: 10px;
+      }
     }
+
+    .contact_right {
+      width: 50%;
+
+      ul {
+        padding: 0;
+
+        li {
+          list-style: none;
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          margin-bottom: 15px;
+          transition: all 0.3s ease;
+
+          &:hover {
+            transform: translateY(-3px);
+            font-size: 32px;
+          }
+
+          a {
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: lighten(white, 10%);
+            }
+          }
+
+          svg {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
 }
+@media (max-width: 790px) {
+    .contact {
+      .contact-container {
+        .contact_left {
+          span:first-of-type {
+            font-size: 50px;
+          }
+  
+          span:nth-of-type(2) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  
+@media (max-width: 511px) {
+    .contact {
+      .contact-container {
+        .contact_left {
+          span:first-of-type {
+            font-size: 30px;
+          }
+  
+          span:nth-of-type(2) {
+            font-size: 17px;
+          }
+        }
+        .contact_right{
+            ul{li{
+                font-size: 20px;
+                svg{
+                    font-size: 14px;
+                }
+            }}
+        }
+      }
+    }
+  }
+  

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Hero.scss";
 const Hero = () => {
   return (
-    <section className="hero p-4">
+    <section className="hero p-2  p-md-4">
       <div className="hero-container">
         <div className="hero-left">
           <div className="Name">

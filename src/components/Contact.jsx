@@ -6,7 +6,7 @@ import { IoLogoLinkedin } from "react-icons/io";
 const Contact = () => {
   return (
    <section id='contact' className="contact container-fluid mt-5">
-        <div className="container p-4 contact-container">
+        <div className="container p-2 p-sm-4 contact-container">
             <div className="contact_left">
                 <span>Contact</span><br />
                 <span>Feel free to reach out</span>

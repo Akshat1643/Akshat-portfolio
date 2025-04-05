@@ -4,7 +4,7 @@ import "../styles/About.scss"
 
 const About = () => {
   return (
-    <section id = "about" className="hero p-4">
+    <section id = "about" className="hero_1 p-2  p-md-4">
       <div className="hero-container">
       <div className="hero-right">
           <div className="img_2">
