@@ -56,7 +56,7 @@ const Projects = () => {
           <span>Projects</span>
         </div>
         <div className="mt-2">
-          <div className="row row-cols-1 row-cols-md-3 g-4">
+          <div className="row row-cols-1  row-cols-md-2 row-cols-lg-3 g-4">
             {projectData.map((project, index) => (
               <div className="col card_col" key={index}>
                 <Card className="h-100 project_card">

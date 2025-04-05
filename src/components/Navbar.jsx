@@ -33,10 +33,10 @@ const Navbar = () => {
         )}
         {view === 1 ? (
           <ul className="nav-ul">
-          <li onClick={() => setView(0)}>About</li>
-          <li onClick={() => setView(0)}>Experience</li>
-          <li onClick={() => setView(0)}>Projects</li>
-          <li onClick={() => setView(0)}>Contact</li>
+          <li onClick={() => setView(0)}><HashLink smooth to="/#about">About</HashLink></li>
+          <li onClick={() => setView(0)}><HashLink smooth to="/#experience">Experience</HashLink></li>
+          <li onClick={() => setView(0)}><HashLink smooth to="/#projects">Projects</HashLink></li>
+          <li onClick={() => setView(0)}><HashLink smooth to="/#contact">Contact</HashLink></li>
         </ul>
         
         ) : (
