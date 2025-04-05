@@ -1,0 +1,41 @@
+@import "Variables";
+.contact{
+    background-color: $color-secondry;
+    >.contact-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $color-text;
+        >.contact_left{
+            width: 50%;
+            > span:nth-child(1) {
+               font-size: 80px;
+              }
+              > span:nth-of-type(2) {
+                font-size: 40px;
+              }
+        }
+        >.contact_right{
+            width: 50%;
+            >ul{
+                li{
+                    list-style-type: none;
+                    font-size: 30px;
+                    display: flex;
+                    align-items: center;
+                    gap: 25px;
+                    &:hover{
+                        font-size: 35px;
+                    }
+                    >a{
+                        text-decoration: none;
+                        color: white;
+                        &:hover{
+                            font-size: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

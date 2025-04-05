@@ -1,0 +1,66 @@
+@import "Variables";
+.navbar{
+    color:$color-text;
+    font: $font-robot;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    position: relative;
+    >.nav-ul{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        padding:0;
+        margin: 0;
+        >li{
+            list-style-type: none;
+            font-size: 25px;
+        }}
+    >.nav-ul_2{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        padding:0;
+        margin: 0;
+        >li{
+            list-style-type: none;
+            font-size: 25px;
+            >a{
+                text-decoration: none;
+                color: $color-text;
+            }
+        }}
+    >.portfolio{
+            color: $color-text;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            
+        }
+    .hamburger{
+        display: none;
+    }    
+        @media  (max-width:780px) {
+            .navbar{
+               flex-direction: column;
+        }   
+        .hamburger{
+            display: block;
+        } 
+        .nav-ul{
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            top: 106%;
+            gap: 5px;
+            padding: 1rem;
+            z-index: 1000;
+            border-radius: 10px;
+            background: rgb(25,55,109);
+            background:linear-gradient(0deg, rgba(25,55,109,0.2) 0%, rgba(25,55,109,1) 100%);
+        }
+        .nav-ul_2{
+            display: none;
+        }
+}}

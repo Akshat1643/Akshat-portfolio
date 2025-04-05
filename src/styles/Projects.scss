@@ -1,0 +1,39 @@
+@import "Variables";
+
+.projects {
+  color: $color-text;
+
+  .project-container {
+    .heading_1 {
+      span {
+        font-size: 72px;
+      }
+    }
+  }
+
+  .card_col {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .project_card {
+      background-color: #e8effc;
+      box-shadow: 0 4px 10px rgba(216, 177, 21, 0.3);
+      transition: box-shadow 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 4px 20px rgba(123, 163, 237, 0.8); // white shadow on hover
+      }
+
+      .card_img {
+        height: 250px;
+        object-fit: cover;
+      }
+      >.card_body{
+        background-color:  #c7d7f6;
+      }
+    }
+  }
+}
